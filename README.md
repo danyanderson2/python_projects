@@ -1,2 +1,2 @@
 # python_projects
-Follow my journey into python programming
+Follow up my journey into python programming

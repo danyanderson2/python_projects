@@ -1,0 +1,4 @@
+1.Create a user account
+2.Create a new graph
+3.Get the graph
+4.
