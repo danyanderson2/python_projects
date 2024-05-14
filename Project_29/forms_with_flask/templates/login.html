@@ -1,0 +1,37 @@
+{% extends 'base.html'%}
+{% block title %}Login{%endblock%}
+{% from 'bootstrap5/form.html' import render_form%}
+{% block content%}
+        <div class="container">
+		<h1>Login</h1>
+		{{render_form(login_form)}}
+        </div>
+{%endblock%}
+
+			<!-- login_form comes from main.py and was passed as argument to render_template-->
+			<!-- It is an instance of my custom form class -->
+<!--			<form method="POST" action="{{url_for('login')}}" novalidate>-->
+<!--				<p>-->
+<!--					{{ login_form.csrf_token }} <br>-->
+<!--				</p>-->
+<!--				<p>-->
+<!--				{{login_form.name.label}}<br> {{login_form.name(size=20)}}-->
+<!--				</p>-->
+<!--				<p>-->
+<!--				{{ login_form.email.label }} <br> {{ login_form.email(size=30) }}-->
+<!--				{%for err in login_form.email.errors%}-->
+<!--					<span style="color:red">{{err}}</span><br>-->
+<!--				{% endfor %}-->
+<!--				</p>-->
+<!--				<p>-->
+<!--					{{ login_form.password.label }} <br> {{ login_form.password(size=30) }}-->
+<!--					{% for err in login_form.password.errors%}-->
+
+<!--					<span style="color:red">{{err}}</span><br>-->
+<!--					{%endfor%}-->
+<!--				</p>-->
+<!--				<p>-->
+<!--					{{login_form.submit(size=45)}}-->
+<!--					<span style="color:red">{{err}}</span>-->
+<!--				</p>-->
+<!--			</form>-->
